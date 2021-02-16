@@ -49,6 +49,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/eirteam_framework/gui_elements/UniversalScrollList.gd"
 }, {
+"base": "HBSerializable",
+"class": "HBUserSettings",
+"language": "GDScript",
+"path": "res://addons/eirteam_framework/scripts/HBUserSettings.gd"
+}, {
 "base": "Reference",
 "class": "HBUtils",
 "language": "GDScript",
@@ -88,6 +93,7 @@ _global_script_class_icons={
 "HBUniversalListButton": "",
 "HBUniversalListItem": "",
 "HBUniversalScrollList": "",
+"HBUserSettings": "",
 "HBUtils": "",
 "JS_Config": "",
 "JS_InputMapAction": "",
@@ -104,6 +110,7 @@ config/icon="res://icon.png"
 [autoload]
 
 SerializationSystem="*res://addons/eirteam_framework/autoloads/SerializationSystem.gd"
+UserSettings="*res://addons/eirteam_framework/autoloads/UserSettings.gd"
 HBGame="*res://addons/eirteam_framework/autoloads/HBGame.gd"
 JoypadSupport="*res://addons/eirteam_framework/third_party/joypad_support/JoypadSupport.tscn"
 
