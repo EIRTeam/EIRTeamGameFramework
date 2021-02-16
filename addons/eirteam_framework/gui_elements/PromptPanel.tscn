@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://addons/eirteam_framework/gui_elements/PromptPanel.gd" type="Script" id=3]
+[ext_resource path="res://addons/eirteam_framework/third_party/joypad_support/Prompts/PromptInputAction.tscn" type="PackedScene" id=4]
+
+[node name="Panel4" type="Panel"]
+margin_right = 54.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 54, 14 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PromptInputAction" parent="HBoxContainer" instance=ExtResource( 4 )]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 0 )
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+margin_left = 44.0
+margin_right = 44.0
+margin_bottom = 40.0
+size_flags_vertical = 7
+align = 1
+valign = 1
